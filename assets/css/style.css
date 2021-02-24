@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#wrapper {
+  margin: 10px;
+  background-color: whitesmoke;
+  position: fixed;
+  width: 1260px;
+}
+
+#header {
+  height: 126px;
+  background-color: rgb(33, 164, 98);
+  padding: 10px;
+}
+
+#logo {
+  height: 126px;
+  background-color: rgb(33, 164, 98);
+  float: left;
+}
+
+#intestazione {
+  margin-top: 10px;
+  height: 80px;
+  padding: 10px;
+  padding-left: 0px;
+  background-color: rgb(33, 164, 98);
+  float: left;
+  text-align: center;
+  background-color: rgb(33, 164, 98);
+}
+
+#realizzazione {
+  width: 49%;
+  height: 126px;
+  /*background-color: whitesmoke;*/
+  float: right;
+  text-align: center;
+  background-color: rgb(33, 164, 98);
+  /*margin-right: 40px;*/
+  margin-top: 8px;
+}
+
+#project-bar {
+  height: 48px;
+  /*background-color: rgb(33,164,98);*/
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+#container {
+  margin-top: 10px;
+  height: 560px;
+  /*border:solid;*/
+}
+
+#container::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#left-section {
+  width: 40%;
+  height: 450px;
+  float: left;
+  background-color: whitesmoke;
+  /*border: solid; */
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: whitesmoke;
+}
+
+p {
+  text-align: justify;
+  font-size: 17px;
+}
+.phome {
+  text-align: justify;
+  font-size: 17px;
+  padding: 30px;
+}
+
+.relazione {
+  margin-bottom: 15px;
+}
+
+#pform {
+  text-align: center;
+  font-size: 17px;
+}
+
+#right-section {
+  width: 46%;
+  height: 450px;
+  float: right;
+  background-color: whitesmoke;
+  /*border: solid; */
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+#select-project1 {
+  height: 44px;
+  background-color: whitesmoke;
+  margin: 2px;
+  text-align: center;
+  width: 46%;
+  float: left;
+  /*background-color: royalblue;*/
+}
+
+#select-project2 {
+  height: 44px;
+  background-color: whitesmoke;
+  margin: 2px;
+  text-align: center;
+  width: 46%;
+  float: right;
+  /*background-color: aqua;*/
+}
+
+#footer {
+  height: 80px;
+  padding-top: 20px;
+  background-color: rgb(38, 38, 38);
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(155, 155, 155);
+  clear: both;
+  /*position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 98%;*/
+}
+
+/* Definizione STILE di formattazione del contenuto identificato dal tag html <select> ... </select> */
+select {
+  box-align: center;
+  height: 32px;
+  width: 340px;
+  border-radius: 5px;
+  margin: 12px;
+  padding-left: 10px;
+  border: 2px inset rgba(224, 224, 224, 0.582);
+}
+
+/* Definizione Stile specifico di formattazione, per la simulazione dell'attributo PLACEHOLDER 
+   relativamente al CAMPO SELECT */
+select:required:invalid {
+  color: grey;
+}
+
+/* Definizione Stile specifico per "NON visualizzare" nell'elenco delle OPZIONI del CAMPO
+   SELECT, anche l'opzione iniziale, poichè utilizzata solo allo scopo di simulare l'attributo placeholder */
+option[value=""][disabled] {
+  display: none;
+}
+
+/* Definizione Stile per l'elenco delle OPZIONI identificate dal tag <option>...></option>,
+   relativamente all'elenco visualizzabile dall'utente nel CAMPO SELECT */
+option {
+  color: black;
+}
+
+/* Definizione STILE di formattazione del contenuto identificato dal tag html <form> ... </form> */
+form {
+  width: 400px; /* dimensione larghezza */
+  background-color: whitesmoke;
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px; /* dimensione del padding */
+  border-radius: 10px; /* dimensione bordi arrotondati */
+  margin: auto;
+  margin-bottom: 10px;
+  border: 5px double rgb(33, 164, 98); /* dimensione, consistenza e colore del bordo */
+  text-align: center;
+}
+
+/* Definizione STILE di formattazione del contenuto identificato dal tag html <input ... /> */
+
+input {
+  background-color: white;
+  color: black;
+  height: 30px; /* dimensione altezza */
+  width: 80%;
+  margin: 12px;
+  border-radius: 5px;
+  padding-left: 12px;
+  border: 2px inset rgba(224, 224, 224, 0.582);
+}
+
+input[type="submit"],
+[type="button"],
+[type="reset"] {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: rgb(33, 164, 98);
+  color: whitesmoke;
+  cursor: pointer; /*forma puntatore del mouse */
+}
+
+input[type="checkbox"],
+[type="radio"] {
+  width: 0px;
+  height: 0px;
+  border-radius: 0px;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+/* MENU OPERAZIONI di SINISTRA */
+
+#top-menu {
+  text-align: center;
+  width: 20%;
+  background-color: whitesmoke;
+  height: 100%;
+  float: left;
+}
+
+#button-menu {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  padding: auto;
+  height: 60px;
+  /*background-color: bisque;*/
+  color: whitesmoke;
+  cursor: pointer;
+  text-align: center; /*forma puntatore del mouse */
+}
+
+/* MENU SEZIONE INTERATTIVA PROGETTO */
+
+#project-section {
+  width: 75%;
+  float: right;
+  /*background-color: red;*/
+  padding: 20px;
+  text-align: center;
+  height: 520px;
+  overflow-y: scroll;
+}
+
+#subproject1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*background-color: aquamarine;*/
+  /*border: solid;*/
+  height: 60px;
+  float: left;
+  width: 45%;
+}
+
+#subproject2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*background-color: aquamarine;*/
+  /*border: solid;*/
+  height: 60px;
+  float: right;
+  width: 45%;
+  text-align: center;
+}
+
+#subproject3 {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  /*background-color: aquamarine;*/
+  /*border: solid;*/
+}
+
+#subprojectlogin {
+  padding-top: 100px;
+  /* background-color: aquamarine;*/
+  /*border: solid;*/
+}
+
+#subprojecttable {
+  margin-bottom: 20px;
+  /*background-color: aquamarine;*/
+  /*border: solid;*/
+}
+
+#submittable {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: orange;
+  border: solid;
+  height: 60px;
+  float: left;
+  width: 45%;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  border: 10px;
+  border-color: rgb(33, 164, 98);
+  width: 100%;
+  /*width: 800 px;*/
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(33, 164, 98);
+  color: whitesmoke;
+}
+
+td {
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+td.ricette {
+  border: 0px;
+  padding: 0px;
+}
+td.ingredienti {
+  border: 0px;
+  padding: 0px;
+  /*background-color: aqua;*/
+}
+.qta {
+  border: 0px;
+  padding: 0px;
+  width: 150px;
+  background-color: white;
+  color: black;
+  height: 30px; /* dimensione altezza */
+  margin: 12px;
+  border-radius: 5px;
+  padding-left: 12px;
+  border: 2px inset rgba(224, 224, 224, 0.582);
+}
+.mod,
+.note {
+  border: 0px;
+  padding: 0px;
+}
+td.insert {
+  border: 0px;
+  padding: 0px;
+}
+td.note {
+  border: 0px;
+  padding: 0px;
+}
+
+.ingredientefree {
+  border: 0px;
+  padding: 0px;
+  width: 320px;
+  background-color: white;
+  color: black;
+  height: 30px; /* dimensione altezza */
+  margin: 12px;
+  border-radius: 5px;
+  padding-left: 12px;
+  border: 2px inset rgba(224, 224, 224, 0.582);
+}
+
+#formricette {
+  /*background-color:orange;    */
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  width: 90%;
+  border: whitesmoke;
+}
+
+textarea {
+  background-color: white;
+  color: black;
+  height: 55px;
+  width: 95%;
+  margin: 12px;
+  border-radius: 5px;
+  padding-left: 12px;
+  border: 2px inset rgba(224, 224, 224, 0.582);
+}
+
+#note {
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 95%;
+  margin: 12px;
+  border-radius: 5px;
+  padding-left: 12px;
+  border: 2px inset rgba(224, 224, 224, 0.582);
+}
+
+.ricetta {
+  box-align: center;
+  height: 32px;
+  width: 180px;
+  border-radius: 5px;
+  margin: 0px;
+  padding-left: 10px;
+  border: 2px inset rgba(224, 224, 224, 0.582);
+}
+
+#formconferme {
+  /*background-color:orange;*/
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  width: 90%;
+  border: whitesmoke;
+}
+
+#formricercamultipla {
+  /*background-color:orange;*/
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+  width: 85%;
+}
+
+#tableingredienti {
+  /*background-color: orange ;*/
+  /*border: solid;*/
+  float: right;
+  width: 45%;
+}
+#tablefeedback {
+  /*background-color: orange ;*/
+  /*border: solid;*/
+  float: left;
+  width: 45%;
+}
