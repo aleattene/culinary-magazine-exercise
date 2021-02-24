@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- Inizio documento Html in Header.php e Fine in Footer.php -->
+
+<html lang="it">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+
+    <title> BDC project </title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <img src="./assets/img/unigm_logo.jpg" alt="" width="240px" height="126px">
+            </div>
+
+            <div id="intestazione">
+                <h1>Università degli Studi <br> -------- </h1>
+            </div>
+
+            <div id="realizzazione">
+                <h3>Corso di Laurea in Ingegneria Informatica<br>
+                    Insegnamento: -------- <br>
+                    Docente: Prof. -------- <br>
+                    Realizzazione: -------- <br>
+                    Matricola: --------
+                </h3>
+            </div>
+        </div>
+        <div id="container">
+            <div id="subprojectlogin">
+                <form id="form" name="form" action="./src/logincontrol.php" method="POST">
+
+                    <input required type="text" id="username" name="username" placeholder="Username &nbsp;(required)"
+                        maxlength="50" />
+
+                    <input required type="password" id="password" name="password"
+                        placeholder="Password &nbsp; (required)" maxlength="50" />
+
+                    <input type="submit" name="login" value="Effettua il Login" />
+                    <input type="reset" name="reset" value="Annulla" />
+
+                </form>
+
+            </div>
+        </div>
+        <div id="footer">
+            <!-- segue documento specifico php e chiude il file Header.php-->
+            <br>Copyright &commat; 2019 - All Right Reserved - 1280 x 1024 O.R.
+        </div>
+
+</body>
+
+</html>
